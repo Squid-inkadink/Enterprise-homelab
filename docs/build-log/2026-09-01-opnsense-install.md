@@ -101,13 +101,7 @@ Observed indicators included:
 - Solid link indicator on eth0
 - No video output
 
-The Ethernet link indicators suggested that at least part of the appliance was receiving power and the NIC had established a physical link.
-
-Rather than immediately assuming that the appliance itself was dead, I moved the power connection to the second power input/path.
-
-The system subsequently produced video output and successfully booted to the existing **Sophos UTM 9.6** splash screen.
-
-This isolated the original problem to the first power path, although additional testing would be required to determine whether the actual failure is the power adapter, connector, or another component in that path.
+The Ethernet link indicators suggested that at least part of the appliance was receiving power and the NIC had established a physical link. Rather than immediately assuming that the appliance itself was dead, I moved the power connection to the second power input/path. The system subsequently produced video output and successfully booted to the existing **Sophos UTM 9.6** splash screen. This isolated the original problem to the first power path, although additional testing would be required to determine whether the actual failure is the power adapter, connector, or another component in that path.
 
 ### Troubleshooting Takeaway
 
@@ -322,13 +316,7 @@ Install UFS
 
 ## Why UFS?
 
-ZFS provides valuable storage features including checksumming, snapshots, pools, and more advanced storage management.
-
-Those features can be extremely useful for servers and larger storage systems.
-
-However, this appliance is being used as a dedicated firewall with a single internal storage device. My priority is a simple and lightweight firewall installation rather than advanced storage management.
-
-For that reason, I selected **UFS**.
+ZFS provides valuable storage features including checksumming, snapshots, pools, and more advanced storage management. Those features can be extremely useful for servers and larger storage systems. However, this appliance is being used as a dedicated firewall with a single internal storage device. My priority is a simple and lightweight firewall installation rather than advanced storage management. For that reason, I selected **UFS**.
 
 This is also an important homelab design principle:
 
@@ -507,11 +495,7 @@ Over the next several days:
 
 ## End of Session
 
-The first session focused primarily on validating and repurposing the firewall hardware rather than configuring the network itself.
-
-The Sophos SG 115 Rev. 3 was successfully validated, the existing Sophos UTM installation was replaced with OPNsense 26.7, and the appliance is ready for initial network configuration.
-
-The next phase will move from installing individual infrastructure components toward designing how those components should communicate.
+The first session focused primarily on validating and repurposing the firewall hardware rather than configuring the network itself. The Sophos SG 115 Rev. 3 was successfully validated, the existing Sophos UTM installation was replaced with OPNsense 26.7, and the appliance is ready for initial network configuration. The next phase will move from installing individual infrastructure components toward designing how those components should communicate.
 
 The primary focus will be:
 
