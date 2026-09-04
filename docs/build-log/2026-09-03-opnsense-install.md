@@ -1,6 +1,7 @@
 # Build Log 002: Sophos SG 115 Rev. 3 to OPNsense 
 
-Date: September 1, 2026 | Status: Installation Complete, Configuration Pending
+**Date:** September 3, 2026  
+**Status:** Installation Complete, Configuration Pending
 
 ## Objective
 
